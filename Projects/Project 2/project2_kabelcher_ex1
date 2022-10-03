@@ -1,0 +1,8 @@
+<?php
+
+$list;
+$sublist;
+
+for ($list=1; $list<=4; $list++){
+    echo "$list<br>";
+   }
