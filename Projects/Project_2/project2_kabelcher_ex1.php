@@ -17,17 +17,15 @@ Class sublist {
  ?>  
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
-</head>
+<head></head>
 <body>
-<ul>
- <li><?php echo list(); ?>
     <ul>
-      <li><?php echo sublist(); ?></li>
+      <li><?php echo list(); ?>
+          <ul>
+            <li><?php echo sublist(); ?></li>
+          </ul>
+      </li>
+    
     </ul>
- </li>
- 
-</ul>
 </body>
 </html>
