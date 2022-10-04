@@ -2,7 +2,7 @@
 
 	$header = "My Web Page";
 	$name = "Kai Belcher";
-	$footer = "My Web Page \x184/2018"
+	$footer = "My Web Page \x184/2018";
 	$paragraph = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat mollis dolor at bibendum. 
 	In congue maximus ligula, ut faucibus mi accumsan at. Vestibulum sagittis tortor eget dui ultricies, a vulputate lacus faucibus. 
 	Fusce aliquet bibendum erat, sed bibendum eros cursus eu. Nulla at neque rhoncus, ultricies odio at, accumsan elit. 

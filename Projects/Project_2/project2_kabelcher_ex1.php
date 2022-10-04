@@ -3,13 +3,13 @@
 $list = 1;
 $sublist = 1;
 
-Class list {
+function List(){
   for ($list=1; $list<=4; $list++){
     echo "$list<br>";
    }
 }
 
-Class sublist {
+function Sublist(){
   for ($sublist=1; $sublist<=5; $sublist++){
     echo "$sublist<br>";
    }
@@ -20,9 +20,9 @@ Class sublist {
 <head></head>
 <body>
     <ul>
-      <li><?php echo list(); ?>
+      <li><?php echo List(); ?>
           <ul>
-            <li><?php echo sublist(); ?></li>
+            <li><?php echo Sublist(); ?></li>
           </ul>
       </li>
     
