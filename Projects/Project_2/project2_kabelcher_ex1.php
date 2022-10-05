@@ -1,31 +1,37 @@
 <?php
 
-$list = 1;
-$sublist = 1;
+$list = 5;
+$i = 1;
+$sublist = 5;
+$j = 1;
+$buildList = "<ul>";
 
-function List(){
-  for ($list=1; $list<=4; $list++){
-    echo "$list<br>";
-   }
-}
+  while ($i <= $list){
+    $buildList .= "<li>";
+    echo "$i<br>";
+    while ($j <= $sublist){
+      $buildList .= "<li>";
+      echo "$sublist<br>";
+      $buildList .= "</li>";
+      $sublist ++;
+    }
+    $buildList .= "</li>";
+    $list ++;
+  }
+  
+$buildlist = "</ul>";
+  
+    
 
-function Sublist(){
-  for ($sublist=1; $sublist<=5; $sublist++){
-    echo "$sublist<br>";
-   }
-}
- ?>  
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head></head>
 <body>
-    <ul>
-      <li><?php echo List(); ?>
-          <ul>
-            <li><?php echo Sublist(); ?></li>
-          </ul>
-      </li>
-    
-    </ul>
+   <?php echo "$buildList<br>"; ?>
+</ul>
+        
+
 </body>
 </html>

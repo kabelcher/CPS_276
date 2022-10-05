@@ -1,19 +1,25 @@
 <?php
     $rows = 1;
     $columns = 1;
-    $table;
+    $table = "<table border = 1>";
 
     
-    while ($rows = 1, $rows <= 15, $rows ++) {
-        $table = <tr>;
-        while ($columns = 1, $columns <= 5, $columns ++) {
-            $table .= “<td>Row ($i), Cell ($j)</td>”;
+    while ($rows <= 15) {
+        $table .= "<tr>";
+        while ($columns <= 5) {
+            $table .= "<td>Row ($rows), Cell ($columns)</td>";
+            $columns ++;
         }
+        $rows ++;
+        $table .= "</tr>";
     }
+    $table = "</table>";
        
 ?>
 <!DOCTYPE html>
 <html>
-    <head></head>
-    <body><?php echo $table; ?></body>
+    <head>Table for Exercise 3</head>
+    <body>
+        <?php echo "$table<br>"; ?>
+    </body>
 </html>
