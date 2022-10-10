@@ -4,32 +4,29 @@ $list = 5;
 $i = 1;
 $sublist = 5;
 $j = 1;
-$buildList = "<ul>";
+$buildList = "<ol>";
 
-  while ($i <= $list){
-    $buildList .= "<li>";
-    echo "$i<br>";
-    while ($j <= $sublist){
-      $buildList .= "<li>";
-      echo "$sublist<br>";
-      $buildList .= "</li>";
-      $sublist ++;
-    }
-    $buildList .= "</li>";
-    $list ++;
-  }
+while ($i <= 5) {
+
+  $buildList = "<li>";
   
-$buildlist = "</ul>";
+
+
+  $buildList = "</li>";
+
+
+
+}
   
     
-
+$buildList = "</ol>";
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head></head>
 <body>
-   <?php echo "$buildList<br>"; ?>
+   <?php echo $buildList; ?>
 </ul>
         
 

@@ -1,17 +1,21 @@
 <?php
-    $rows = 1;
-    $columns = 1;
+    $r = 1;
+    $c = 1;
+    $inner = 1;
+    $outer = 1;
     $table = "<table border = 1>";
 
     
-    while ($rows <= 15) {
+    while ($outer <= 15) {
         $table .= "<tr>";
-        while ($columns <= 5) {
-            $table .= "<td>Row ($rows), Cell ($columns)</td>";
-            $columns ++;
+        while ($inner <= 5) {
+            $table .= "<td>Row ($r), Cell ($c)</td>";
+            $c ++;
+            $inner ++;
         }
-        $rows ++;
+        $r ++;
         $table .= "</tr>";
+        $outer ++;
     }
     $table = "</table>";
        
@@ -20,6 +24,6 @@
 <html>
     <head>Table for Exercise 3</head>
     <body>
-        <?php echo "$table<br>"; ?>
+        <?php echo $table; ?>
     </body>
 </html>
